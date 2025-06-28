@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace HackyFox
 {
-    public partial class Menu : Form
+    public partial class Form2 : Form
     {
-        public Menu()
+        public Form2()
         {
             InitializeComponent();
-        }
-
-        private void btnUser_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panelLogo_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
