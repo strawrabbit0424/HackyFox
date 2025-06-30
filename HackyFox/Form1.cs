@@ -31,5 +31,20 @@ namespace HackyFox
         {
 
         }
+
+        private void panelmenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Form1_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelSlideMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
