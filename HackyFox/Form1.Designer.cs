@@ -33,27 +33,27 @@
             label3 = new Label();
             label1 = new Label();
             panelmenu = new Panel();
-            pictureBox1 = new PictureBox();
+            label6 = new Label();
+            label5 = new Label();
+            label4 = new Label();
             iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
             iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
+            pictureBox1 = new PictureBox();
             panelmenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Comfortaa", 25F);
+            label2.Font = new Font("Microsoft Sans Serif", 25F);
             label2.Location = new Point(267, 19);
             label2.Name = "label2";
-            label2.Size = new Size(184, 53);
+            label2.Size = new Size(163, 39);
             label2.TabIndex = 2;
             label2.Text = "Leccion 1";
             // 
@@ -80,63 +80,83 @@
             // 
             // panelmenu
             // 
-            panelmenu.BackColor = Color.FromArgb(210, 232, 236);
-            panelmenu.Controls.Add(label6);
+            panelmenu.BackColor = Color.FromArgb(155, 209, 219);
+            panelmenu.Controls.Add(pictureBox1);
             panelmenu.Controls.Add(label5);
             panelmenu.Controls.Add(label4);
-            panelmenu.Controls.Add(pictureBox1);
             panelmenu.Controls.Add(iconPictureBox3);
             panelmenu.Controls.Add(iconPictureBox2);
             panelmenu.Controls.Add(iconPictureBox1);
             panelmenu.Controls.Add(label1);
+            panelmenu.Controls.Add(label6);
             panelmenu.Dock = DockStyle.Left;
             panelmenu.Location = new Point(0, 0);
             panelmenu.Name = "panelmenu";
             panelmenu.Size = new Size(261, 504);
             panelmenu.TabIndex = 4;
             // 
-            // pictureBox1
+            // label6
             // 
-            pictureBox1.Image = Properties.Resources.peticon;
-            pictureBox1.Location = new Point(3, 275);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(66, 55);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 5;
-            pictureBox1.TabStop = false;
+            label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
+            label6.Font = new Font("Comfortaa", 20F);
+            label6.Location = new Point(74, 331);
+            label6.Name = "label6";
+            label6.Size = new Size(141, 42);
+            label6.TabIndex = 8;
+            label6.Text = "Mascota";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Comfortaa", 20F);
+            label5.Location = new Point(74, 227);
+            label5.Name = "label5";
+            label5.Size = new Size(159, 42);
+            label5.TabIndex = 7;
+            label5.Text = "Lecciones";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Comfortaa", 20F);
+            label4.Location = new Point(73, 120);
+            label4.Name = "label4";
+            label4.Size = new Size(131, 42);
+            label4.TabIndex = 5;
+            label4.Text = "Usuario";
             // 
             // iconPictureBox3
             // 
-            iconPictureBox3.BackColor = Color.FromArgb(210, 232, 236);
+            iconPictureBox3.BackColor = Color.FromArgb(155, 209, 219);
             iconPictureBox3.ForeColor = Color.FromArgb(0, 142, 166);
             iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.Book;
             iconPictureBox3.IconColor = Color.FromArgb(0, 142, 166);
             iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconPictureBox3.IconSize = 64;
-            iconPictureBox3.Location = new Point(3, 198);
+            iconPictureBox3.IconSize = 73;
+            iconPictureBox3.Location = new Point(0, 217);
             iconPictureBox3.Name = "iconPictureBox3";
-            iconPictureBox3.Size = new Size(82, 64);
+            iconPictureBox3.Size = new Size(82, 73);
             iconPictureBox3.TabIndex = 6;
             iconPictureBox3.TabStop = false;
             // 
             // iconPictureBox2
             // 
-            iconPictureBox2.BackColor = Color.FromArgb(210, 232, 236);
-            iconPictureBox2.ForeColor = Color.FromArgb(0, 142, 166);
+            iconPictureBox2.BackColor = Color.FromArgb(155, 209, 219);
             iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.UserCircle;
-            iconPictureBox2.IconColor = Color.FromArgb(0, 142, 166);
+            iconPictureBox2.IconColor = Color.White;
             iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconPictureBox2.IconSize = 64;
-            iconPictureBox2.Location = new Point(3, 110);
+            iconPictureBox2.IconSize = 73;
+            iconPictureBox2.Location = new Point(0, 110);
             iconPictureBox2.Name = "iconPictureBox2";
-            iconPictureBox2.Size = new Size(82, 64);
+            iconPictureBox2.Size = new Size(82, 73);
             iconPictureBox2.TabIndex = 5;
             iconPictureBox2.TabStop = false;
             iconPictureBox2.Click += iconPictureBox2_Click;
             // 
             // iconPictureBox1
             // 
-            iconPictureBox1.BackColor = Color.FromArgb(210, 232, 236);
+            iconPictureBox1.BackColor = Color.FromArgb(155, 209, 219);
             iconPictureBox1.ForeColor = Color.FromArgb(0, 142, 166);
             iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Bars;
             iconPictureBox1.IconColor = Color.FromArgb(0, 142, 166);
@@ -149,35 +169,16 @@
             iconPictureBox1.TabStop = false;
             iconPictureBox1.Click += iconPictureBox1_Click;
             // 
-            // label4
+            // pictureBox1
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Comfortaa", 20F);
-            label4.Location = new Point(61, 120);
-            label4.Name = "label4";
-            label4.Size = new Size(131, 42);
-            label4.TabIndex = 5;
-            label4.Text = "Usuario";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Comfortaa", 20F);
-            label5.Location = new Point(61, 208);
-            label5.Name = "label5";
-            label5.Size = new Size(159, 42);
-            label5.TabIndex = 7;
-            label5.Text = "Lecciones";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Comfortaa", 20F);
-            label6.Location = new Point(61, 288);
-            label6.Name = "label6";
-            label6.Size = new Size(141, 42);
-            label6.TabIndex = 8;
-            label6.Text = "Mascota";
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.Image = Properties.Resources.Exclude;
+            pictureBox1.Location = new Point(0, 317);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(62, 68);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 5;
+            pictureBox1.TabStop = false;
             // 
             // Form1
             // 
@@ -193,10 +194,10 @@
             Text = "HackyFox- Lecciones";
             panelmenu.ResumeLayout(false);
             panelmenu.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -210,9 +211,9 @@
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
-        private PictureBox pictureBox1;
         private Label label5;
         private Label label4;
         private Label label6;
+        private PictureBox pictureBox1;
     }
 }
