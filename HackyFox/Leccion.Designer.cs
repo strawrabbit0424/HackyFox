@@ -30,10 +30,11 @@
         {
             panel1 = new Panel();
             panel2 = new Panel();
-            panel3 = new Panel();
             LbTituloL = new Label();
-            LbTituloContenidoL = new Label();
+            panel3 = new Panel();
+            TbContenidoL = new RoundedTextBox();
             LbSubtituloL = new Label();
+            LbTituloContenidoL = new Label();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
             SuspendLayout();
@@ -56,16 +57,6 @@
             panel2.Size = new Size(1043, 48);
             panel2.TabIndex = 1;
             // 
-            // panel3
-            // 
-            panel3.Controls.Add(LbSubtituloL);
-            panel3.Controls.Add(LbTituloContenidoL);
-            panel3.Dock = DockStyle.Fill;
-            panel3.Location = new Point(67, 48);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(1043, 686);
-            panel3.TabIndex = 2;
-            // 
             // LbTituloL
             // 
             LbTituloL.AutoSize = true;
@@ -77,29 +68,51 @@
             LbTituloL.TabIndex = 0;
             LbTituloL.Text = "label1";
             // 
-            // LbTituloContenidoL
+            // panel3
             // 
-            LbTituloContenidoL.AutoSize = true;
-            LbTituloContenidoL.Font = new Font("Comfortaa", 30F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            LbTituloContenidoL.ForeColor = Color.FromArgb(5, 122, 144);
-            LbTituloContenidoL.Location = new Point(37, 35);
-            LbTituloContenidoL.Name = "LbTituloContenidoL";
-            LbTituloContenidoL.Size = new Size(146, 62);
-            LbTituloContenidoL.TabIndex = 0;
-            LbTituloContenidoL.Text = "label1";
-            LbTituloContenidoL.TextAlign = ContentAlignment.MiddleLeft;
+            panel3.BackColor = Color.FromArgb(255, 241, 62);
+            panel3.Controls.Add(TbContenidoL);
+            panel3.Controls.Add(LbSubtituloL);
+            panel3.Controls.Add(LbTituloContenidoL);
+            panel3.Dock = DockStyle.Fill;
+            panel3.Location = new Point(67, 48);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(1043, 686);
+            panel3.TabIndex = 2;
+            // 
+            // TbContenidoL
+            // 
+            TbContenidoL.BackColor = Color.FromArgb(247, 242, 172);
+            TbContenidoL.Font = new Font("Segoe UI", 20F);
+            TbContenidoL.Location = new Point(102, 276);
+            TbContenidoL.Name = "TbContenidoL";
+            TbContenidoL.Size = new Size(523, 371);
+            TbContenidoL.TabIndex = 2;
+            TbContenidoL.Texts = "";
             // 
             // LbSubtituloL
             // 
             LbSubtituloL.AutoSize = true;
             LbSubtituloL.Font = new Font("Comfortaa", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             LbSubtituloL.ForeColor = Color.FromArgb(5, 122, 144);
-            LbSubtituloL.Location = new Point(243, 116);
+            LbSubtituloL.Location = new Point(64, 136);
             LbSubtituloL.Name = "LbSubtituloL";
             LbSubtituloL.Size = new Size(98, 42);
             LbSubtituloL.TabIndex = 1;
             LbSubtituloL.Text = "label1";
             LbSubtituloL.TextAlign = ContentAlignment.MiddleRight;
+            // 
+            // LbTituloContenidoL
+            // 
+            LbTituloContenidoL.AutoSize = true;
+            LbTituloContenidoL.Font = new Font("Comfortaa", 30F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            LbTituloContenidoL.ForeColor = Color.FromArgb(5, 122, 144);
+            LbTituloContenidoL.Location = new Point(42, 39);
+            LbTituloContenidoL.Name = "LbTituloContenidoL";
+            LbTituloContenidoL.Size = new Size(146, 62);
+            LbTituloContenidoL.TabIndex = 0;
+            LbTituloContenidoL.Text = "label1";
+            LbTituloContenidoL.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // Leccion
             // 
@@ -111,7 +124,6 @@
             Controls.Add(panel1);
             MinimumSize = new Size(950, 600);
             Name = "Leccion";
-            Text = "Leccion";
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             panel3.ResumeLayout(false);
@@ -127,5 +139,6 @@
         private Label LbTituloL;
         private Label LbTituloContenidoL;
         private Label LbSubtituloL;
+        private RoundedTextBox TbContenidoL;
     }
 }
