@@ -29,143 +29,251 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
-            panelSlideMenu = new Panel();
-            button2 = new Button();
-            btnLeccion = new Button();
-            btnUser = new Button();
+            panelMenu = new Panel();
+            btnMascota = new FontAwesome.Sharp.IconButton();
+            btnLecciones = new FontAwesome.Sharp.IconButton();
+            btnUser = new FontAwesome.Sharp.IconButton();
+            btnExit = new FontAwesome.Sharp.IconButton();
             panelLogo = new Panel();
-            iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            panelSlideMenu.SuspendLayout();
+            btnMenu = new FontAwesome.Sharp.IconButton();
+            pbLogo = new PictureBox();
+            panelTitleBar = new Panel();
+            lbLecciones = new Label();
+            panelDesk = new Panel();
+            panelMenu.SuspendLayout();
             panelLogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbLogo).BeginInit();
+            panelTitleBar.SuspendLayout();
             SuspendLayout();
             // 
-            // panelSlideMenu
+            // panelMenu
             // 
-            panelSlideMenu.AutoScroll = true;
-            panelSlideMenu.BackColor = Color.FromArgb(155, 209, 219);
-            panelSlideMenu.Controls.Add(button2);
-            panelSlideMenu.Controls.Add(btnLeccion);
-            panelSlideMenu.Controls.Add(btnUser);
-            panelSlideMenu.Controls.Add(panelLogo);
-            panelSlideMenu.Dock = DockStyle.Left;
-            panelSlideMenu.Font = new Font("Clear Sans", 9F);
-            panelSlideMenu.Location = new Point(0, 0);
-            panelSlideMenu.Name = "panelSlideMenu";
-            panelSlideMenu.Size = new Size(340, 1033);
-            panelSlideMenu.TabIndex = 0;
+            panelMenu.BackColor = Color.FromArgb(155, 209, 219);
+            panelMenu.Controls.Add(btnMascota);
+            panelMenu.Controls.Add(btnLecciones);
+            panelMenu.Controls.Add(btnUser);
+            panelMenu.Controls.Add(btnExit);
+            panelMenu.Controls.Add(panelLogo);
+            panelMenu.Dock = DockStyle.Left;
+            panelMenu.Font = new Font("Clear Sans", 9F);
+            panelMenu.Location = new Point(0, 0);
+            panelMenu.Name = "panelMenu";
+            panelMenu.Size = new Size(230, 726);
+            panelMenu.TabIndex = 0;
+            panelMenu.Paint += panelMenu_Paint;
             // 
-            // button2
+            // btnMascota
             // 
-            button2.Dock = DockStyle.Top;
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 241, 62);
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Clear Sans", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.FromArgb(5, 122, 144);
-            button2.Image = (Image)resources.GetObject("button2.Image");
-            button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(0, 223);
-            button2.Name = "button2";
-            button2.Padding = new Padding(10, 0, 0, 0);
-            button2.Size = new Size(340, 87);
-            button2.TabIndex = 3;
-            button2.Text = "Mascota";
-            button2.TextAlign = ContentAlignment.MiddleLeft;
-            button2.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button2.UseVisualStyleBackColor = true;
+            btnMascota.BackgroundImageLayout = ImageLayout.Stretch;
+            btnMascota.Dock = DockStyle.Top;
+            btnMascota.FlatAppearance.BorderSize = 0;
+            btnMascota.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 222, 89);
+            btnMascota.FlatStyle = FlatStyle.Flat;
+            btnMascota.Font = new Font("Clear Sans", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnMascota.ForeColor = Color.FromArgb(5, 122, 144);
+            btnMascota.IconChar = FontAwesome.Sharp.IconChar.UserSecret;
+            btnMascota.IconColor = Color.FromArgb(5, 122, 144);
+            btnMascota.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnMascota.IconSize = 30;
+            btnMascota.ImageAlign = ContentAlignment.MiddleLeft;
+            btnMascota.Location = new Point(0, 227);
+            btnMascota.Name = "btnMascota";
+            btnMascota.Padding = new Padding(10, 0, 0, 0);
+            btnMascota.RightToLeft = RightToLeft.No;
+            btnMascota.Size = new Size(230, 67);
+            btnMascota.TabIndex = 5;
+            btnMascota.Tag = "Mascota";
+            btnMascota.Text = "Mascota";
+            btnMascota.TextAlign = ContentAlignment.MiddleLeft;
+            btnMascota.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnMascota.UseMnemonic = false;
+            btnMascota.UseVisualStyleBackColor = true;
             // 
-            // btnLeccion
+            // btnLecciones
             // 
-            btnLeccion.Dock = DockStyle.Top;
-            btnLeccion.FlatAppearance.BorderSize = 0;
-            btnLeccion.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 241, 62);
-            btnLeccion.FlatStyle = FlatStyle.Flat;
-            btnLeccion.Font = new Font("Clear Sans", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnLeccion.ForeColor = Color.FromArgb(5, 122, 144);
-            btnLeccion.Image = (Image)resources.GetObject("btnLeccion.Image");
-            btnLeccion.ImageAlign = ContentAlignment.MiddleLeft;
-            btnLeccion.Location = new Point(0, 155);
-            btnLeccion.Name = "btnLeccion";
-            btnLeccion.Padding = new Padding(10, 0, 0, 0);
-            btnLeccion.Size = new Size(340, 68);
-            btnLeccion.TabIndex = 2;
-            btnLeccion.Text = "Lecciones";
-            btnLeccion.TextAlign = ContentAlignment.MiddleLeft;
-            btnLeccion.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnLeccion.UseVisualStyleBackColor = true;
+            btnLecciones.BackgroundImageLayout = ImageLayout.Stretch;
+            btnLecciones.Dock = DockStyle.Top;
+            btnLecciones.FlatAppearance.BorderSize = 0;
+            btnLecciones.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 222, 89);
+            btnLecciones.FlatStyle = FlatStyle.Flat;
+            btnLecciones.Font = new Font("Clear Sans", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnLecciones.ForeColor = Color.FromArgb(5, 122, 144);
+            btnLecciones.IconChar = FontAwesome.Sharp.IconChar.Tape;
+            btnLecciones.IconColor = Color.FromArgb(5, 122, 144);
+            btnLecciones.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnLecciones.IconSize = 30;
+            btnLecciones.ImageAlign = ContentAlignment.MiddleLeft;
+            btnLecciones.Location = new Point(0, 160);
+            btnLecciones.Name = "btnLecciones";
+            btnLecciones.Padding = new Padding(10, 0, 0, 0);
+            btnLecciones.RightToLeft = RightToLeft.No;
+            btnLecciones.Size = new Size(230, 67);
+            btnLecciones.TabIndex = 4;
+            btnLecciones.Tag = "Lecciones";
+            btnLecciones.Text = "Lecciones";
+            btnLecciones.TextAlign = ContentAlignment.MiddleLeft;
+            btnLecciones.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnLecciones.UseMnemonic = false;
+            btnLecciones.UseVisualStyleBackColor = true;
             // 
             // btnUser
             // 
+            btnUser.BackgroundImageLayout = ImageLayout.Stretch;
             btnUser.Dock = DockStyle.Top;
             btnUser.FlatAppearance.BorderSize = 0;
-            btnUser.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 241, 62);
+            btnUser.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 222, 89);
             btnUser.FlatStyle = FlatStyle.Flat;
-            btnUser.Font = new Font("Clear Sans", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnUser.Font = new Font("Clear Sans", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnUser.ForeColor = Color.FromArgb(5, 122, 144);
-            btnUser.Image = (Image)resources.GetObject("btnUser.Image");
+            btnUser.IconChar = FontAwesome.Sharp.IconChar.User;
+            btnUser.IconColor = Color.FromArgb(5, 122, 144);
+            btnUser.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnUser.IconSize = 30;
             btnUser.ImageAlign = ContentAlignment.MiddleLeft;
-            btnUser.Location = new Point(0, 87);
+            btnUser.Location = new Point(0, 93);
             btnUser.Name = "btnUser";
             btnUser.Padding = new Padding(10, 0, 0, 0);
-            btnUser.Size = new Size(340, 68);
-            btnUser.TabIndex = 1;
+            btnUser.RightToLeft = RightToLeft.No;
+            btnUser.Size = new Size(230, 67);
+            btnUser.TabIndex = 3;
+            btnUser.Tag = "Usuario";
             btnUser.Text = "Usuario";
             btnUser.TextAlign = ContentAlignment.MiddleLeft;
             btnUser.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnUser.UseMnemonic = false;
             btnUser.UseVisualStyleBackColor = true;
-            btnUser.Click += btnUser_Click;
+            btnUser.Click += btnUser_Click_1;
+            // 
+            // btnExit
+            // 
+            btnExit.BackgroundImageLayout = ImageLayout.Stretch;
+            btnExit.Dock = DockStyle.Bottom;
+            btnExit.FlatAppearance.BorderSize = 0;
+            btnExit.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 222, 89);
+            btnExit.FlatStyle = FlatStyle.Flat;
+            btnExit.Font = new Font("Clear Sans", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnExit.ForeColor = Color.FromArgb(5, 122, 144);
+            btnExit.IconChar = FontAwesome.Sharp.IconChar.ExternalLinkAlt;
+            btnExit.IconColor = Color.FromArgb(5, 122, 144);
+            btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnExit.IconSize = 25;
+            btnExit.ImageAlign = ContentAlignment.MiddleLeft;
+            btnExit.Location = new Point(0, 659);
+            btnExit.Name = "btnExit";
+            btnExit.Size = new Size(230, 67);
+            btnExit.TabIndex = 2;
+            btnExit.Tag = "Salir";
+            btnExit.Text = "Salir";
+            btnExit.TextAlign = ContentAlignment.MiddleLeft;
+            btnExit.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnExit.UseVisualStyleBackColor = true;
+            btnExit.Click += btnExit_Click;
             // 
             // panelLogo
             // 
             panelLogo.BackgroundImageLayout = ImageLayout.Stretch;
-            panelLogo.Controls.Add(iconPictureBox1);
+            panelLogo.Controls.Add(btnMenu);
+            panelLogo.Controls.Add(pbLogo);
             panelLogo.Dock = DockStyle.Top;
             panelLogo.Location = new Point(0, 0);
             panelLogo.Name = "panelLogo";
-            panelLogo.Size = new Size(340, 87);
+            panelLogo.Size = new Size(230, 93);
             panelLogo.TabIndex = 0;
             panelLogo.Paint += panelLogo_Paint;
             // 
-            // iconPictureBox1
+            // btnMenu
             // 
-            iconPictureBox1.BackColor = Color.FromArgb(155, 209, 219);
-            iconPictureBox1.BackgroundImage = (Image)resources.GetObject("iconPictureBox1.BackgroundImage");
-            iconPictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
-            iconPictureBox1.ForeColor = SystemColors.ControlText;
-            iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.None;
-            iconPictureBox1.IconColor = SystemColors.ControlText;
-            iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconPictureBox1.IconSize = 61;
-            iconPictureBox1.InitialImage = (Image)resources.GetObject("iconPictureBox1.InitialImage");
-            iconPictureBox1.Location = new Point(12, 12);
-            iconPictureBox1.Name = "iconPictureBox1";
-            iconPictureBox1.Size = new Size(253, 61);
-            iconPictureBox1.TabIndex = 0;
-            iconPictureBox1.TabStop = false;
+            btnMenu.BackgroundImageLayout = ImageLayout.Stretch;
+            btnMenu.FlatAppearance.BorderSize = 0;
+            btnMenu.FlatAppearance.MouseDownBackColor = Color.FromArgb(255, 222, 89);
+            btnMenu.FlatStyle = FlatStyle.Flat;
+            btnMenu.IconChar = FontAwesome.Sharp.IconChar.Bars;
+            btnMenu.IconColor = Color.FromArgb(5, 122, 144);
+            btnMenu.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnMenu.IconSize = 30;
+            btnMenu.Location = new Point(186, 9);
+            btnMenu.Name = "btnMenu";
+            btnMenu.Size = new Size(38, 63);
+            btnMenu.TabIndex = 1;
+            btnMenu.Tag = "Menu";
+            btnMenu.UseVisualStyleBackColor = true;
+            btnMenu.Click += btnMenu_Click;
+            // 
+            // pbLogo
+            // 
+            pbLogo.Image = (Image)resources.GetObject("pbLogo.Image");
+            pbLogo.Location = new Point(3, 22);
+            pbLogo.Name = "pbLogo";
+            pbLogo.Size = new Size(177, 40);
+            pbLogo.SizeMode = PictureBoxSizeMode.StretchImage;
+            pbLogo.TabIndex = 0;
+            pbLogo.TabStop = false;
+            // 
+            // panelTitleBar
+            // 
+            panelTitleBar.BackColor = Color.White;
+            panelTitleBar.Controls.Add(lbLecciones);
+            panelTitleBar.Dock = DockStyle.Top;
+            panelTitleBar.Location = new Point(230, 0);
+            panelTitleBar.Name = "panelTitleBar";
+            panelTitleBar.Size = new Size(878, 72);
+            panelTitleBar.TabIndex = 1;
+            panelTitleBar.Paint += panel1_Paint;
+            panelTitleBar.MouseDown += panelTitleBar_MouseDown;
+            // 
+            // lbLecciones
+            // 
+            lbLecciones.AutoSize = true;
+            lbLecciones.Font = new Font("Comfortaa", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbLecciones.ForeColor = Color.FromArgb(64, 0, 0);
+            lbLecciones.Location = new Point(6, 9);
+            lbLecciones.Name = "lbLecciones";
+            lbLecciones.Size = new Size(200, 53);
+            lbLecciones.TabIndex = 0;
+            lbLecciones.Text = "Lecciones";
+            lbLecciones.Click += lbLecciones_Click;
+            // 
+            // panelDesk
+            // 
+            panelDesk.BackColor = Color.FromArgb(242, 242, 242);
+            panelDesk.Dock = DockStyle.Fill;
+            panelDesk.Location = new Point(230, 72);
+            panelDesk.Name = "panelDesk";
+            panelDesk.Size = new Size(878, 654);
+            panelDesk.TabIndex = 2;
+            panelDesk.Paint += panelDesk_Paint;
             // 
             // Menu
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1902, 1033);
-            Controls.Add(panelSlideMenu);
+            ClientSize = new Size(1108, 726);
+            Controls.Add(panelDesk);
+            Controls.Add(panelTitleBar);
+            Controls.Add(panelMenu);
             MinimumSize = new Size(950, 600);
             Name = "Menu";
             Text = "Menú - HackyFox";
-            panelSlideMenu.ResumeLayout(false);
+            panelMenu.ResumeLayout(false);
             panelLogo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)iconPictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbLogo).EndInit();
+            panelTitleBar.ResumeLayout(false);
+            panelTitleBar.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Panel panelSlideMenu;
-        private Button btnUser;
+        private Panel panelMenu;
         private Panel panelLogo;
-        private Button button2;
-        private Button btnLeccion;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
+        private Panel panelTitleBar;
+        private Panel panelDesk;
+        private FontAwesome.Sharp.IconButton btnMenu;
+        private PictureBox pbLogo;
+        private Label lbLecciones;
+        private FontAwesome.Sharp.IconButton btnExit;
+        private FontAwesome.Sharp.IconButton btnUser;
+        private FontAwesome.Sharp.IconButton btnMascota;
+        private FontAwesome.Sharp.IconButton btnLecciones;
     }
 }
