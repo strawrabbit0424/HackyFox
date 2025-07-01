@@ -52,12 +52,8 @@ namespace HackyFox.Properties {
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
         internal static global::System.Globalization.CultureInfo Culture {
-            get {
-                return resourceCulture;
-            }
-            set {
-                resourceCulture = value;
-            }
+            get => resourceCulture;
+            set => resourceCulture = value;
         }
         
         /// <summary>
@@ -121,12 +117,12 @@ namespace HackyFox.Properties {
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        ///   Busca un recurso adaptado de tipo System.Drawing.Image.
         /// </summary>
-        internal static System.Drawing.Bitmap textox {
+        internal static System.Drawing.Image textox {
             get {
                 object obj = ResourceManager.GetObject("textox", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                return ((System.Drawing.Image)(obj));
             }
         }
     }

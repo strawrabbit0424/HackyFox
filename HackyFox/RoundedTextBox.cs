@@ -84,7 +84,7 @@ namespace HackyFox
         }
 
         // Sobrescribe la propiedad Text para que se comporte como un TextBox normal
-        public override string Text
+        public override string? Text
         {
             get => textBox.Text;
             set => textBox.Text = value;
