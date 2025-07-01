@@ -31,6 +31,7 @@ namespace HackyFox
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+<<<<<<< HEAD
             pictureBox1Menu = new PictureBox();
             welcomeLabel = new Label();
             label2 = new Label();
@@ -53,6 +54,13 @@ namespace HackyFox
             ((System.ComponentModel.ISupportInitialize)iconPictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
+=======
+            pictureBox2 = new PictureBox();
+            pictureBox1 = new PictureBox();
+            button1 = new Button();
+            label1 = new Label();
+            button2 = new Button();
+>>>>>>> 953d28082e617c84c972a12410ad8c04d8a7e3e7
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -80,6 +88,7 @@ namespace HackyFox
             // 
             // label2
             // 
+<<<<<<< HEAD
             label2.AutoSize = true;
             label2.Font = new Font("Microsoft Sans Serif", 25F);
             label2.Location = new Point(267, 19);
@@ -87,13 +96,43 @@ namespace HackyFox
             label2.Size = new Size(163, 39);
             label2.TabIndex = 2;
             label2.Text = "Leccion 1";
+=======
+            pictureBox2.BackColor = SystemColors.Window;
+            pictureBox2.Location = new Point(90, 80);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(917, 559);
+            pictureBox2.TabIndex = 1;
+            pictureBox2.TabStop = false;
+>>>>>>> 953d28082e617c84c972a12410ad8c04d8a7e3e7
             // 
             // label3
             // 
+<<<<<<< HEAD
             label3.Location = new Point(0, 0);
             label3.Name = "label3";
             label3.Size = new Size(100, 23);
             label3.TabIndex = 0;
+=======
+            pictureBox1.BackColor = Color.White;
+            pictureBox1.Image = Properties.Resources.Copia_de_HackyFox__2_;
+            pictureBox1.Location = new Point(205, 120);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(693, 147);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 2;
+            pictureBox1.TabStop = false;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.FromArgb(174, 225, 235);
+            button1.Font = new Font("Comfortaa", 16F);
+            button1.Location = new Point(443, 376);
+            button1.Name = "button1";
+            button1.Size = new Size(205, 68);
+            button1.TabIndex = 3;
+            button1.Text = "Inciar sesión";
+            button1.UseVisualStyleBackColor = false;
+>>>>>>> 953d28082e617c84c972a12410ad8c04d8a7e3e7
             // 
             // label1
             // 
@@ -104,6 +143,7 @@ namespace HackyFox
             // 
             // panelmenu
             // 
+<<<<<<< HEAD
             panelmenu.BackColor = Color.FromArgb(155, 209, 219);
             panelmenu.Controls.Add(pictureBox1Menu);
             panelmenu.Controls.Add(label5);
@@ -253,6 +293,16 @@ namespace HackyFox
             btn_personalizado3.TabIndex = 8;
             btn_personalizado3.Text = "Registrarse";
             btn_personalizado3.UseVisualStyleBackColor = false;
+=======
+            button2.BackColor = Color.FromArgb(174, 225, 235);
+            button2.Font = new Font("Comfortaa", 18F);
+            button2.Location = new Point(443, 463);
+            button2.Name = "button2";
+            button2.Size = new Size(205, 62);
+            button2.TabIndex = 5;
+            button2.Text = "Registrarse";
+            button2.UseVisualStyleBackColor = false;
+>>>>>>> 953d28082e617c84c972a12410ad8c04d8a7e3e7
             // 
             // Form1
             // 
@@ -271,12 +321,15 @@ namespace HackyFox
             Name = "Form1";
             Text = "HackyFox- Lecciones";
             Load += Form1_Load_1;
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)pictureBox1Menu).EndInit();
             panelmenu.ResumeLayout(false);
             panelmenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).EndInit();
+=======
+>>>>>>> 953d28082e617c84c972a12410ad8c04d8a7e3e7
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
@@ -287,6 +340,7 @@ namespace HackyFox
         private PictureBox pictureBox1Menu;
         private Label welcomeLabel; // Renamed from 'label1'
 
+<<<<<<< HEAD
         private Label label2;
         private Label label3;
         private Label label1;
@@ -302,5 +356,13 @@ namespace HackyFox
         private Btn_personalizado btn_personalizado1;
         private Btn_personalizado btn_personalizado2;
         private Btn_personalizado btn_personalizado3;
+=======
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox1;
+        private Button button1;
+        private Label label1;
+        private Button button2;
+>>>>>>> 953d28082e617c84c972a12410ad8c04d8a7e3e7
     }
 }
+

@@ -87,8 +87,9 @@ namespace HackyFox
         public override string? Text
         {
             get => textBox.Text;
-            set => textBox.Text = value;
+            set => textBox.Text = value ?? string.Empty; // Manejo de valor nulo
         }
+
     }
 }
 

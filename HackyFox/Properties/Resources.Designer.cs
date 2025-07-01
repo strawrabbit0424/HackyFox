@@ -115,6 +115,7 @@ namespace HackyFox.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+<<<<<<< HEAD
         
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Image.
@@ -125,5 +126,7 @@ namespace HackyFox.Properties {
                 return ((System.Drawing.Image)(obj));
             }
         }
+=======
+>>>>>>> 953d28082e617c84c972a12410ad8c04d8a7e3e7
     }
 }
