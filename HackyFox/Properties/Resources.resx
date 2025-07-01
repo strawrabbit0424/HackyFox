@@ -133,12 +133,9 @@
   <data name="image-removebg-preview (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\image-removebg-preview (4).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-<<<<<<< HEAD
-  <data name="textox" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\textox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-=======
-  <data name="Exclude" type="System.Resources.ResXFileRef, System.Windows.Forms">
+
+	 <data name="Exclude" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Exclude.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
->>>>>>> 00fab8b562cf8c923231d26ce875dece77b1947b
+
   </data>
 </root>
