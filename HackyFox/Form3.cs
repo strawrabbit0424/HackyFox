@@ -91,7 +91,10 @@ namespace HackyFox
 
                 foreach (Button menuButton in panelMenu.Controls.OfType<Button>())
                 {
-                    menuButton.Text = "   " + menuButton.Tag.ToString();
+                    if (menuButton.Tag != null) // Verificación para evitar referencias nulas
+                    {
+                        menuButton.Text = "   " + menuButton.Tag.ToString();
+                    }
                     menuButton.ImageAlign = ContentAlignment.MiddleLeft;
                     menuButton.Padding = new Padding(10, 0, 0, 0);
                 }

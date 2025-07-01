@@ -46,5 +46,20 @@ namespace HackyFox
         {
 
         }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_personalizado1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_personalizado2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
