@@ -63,6 +63,16 @@ namespace HackyFox.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap consejopic {
+            get {
+                object obj = ResourceManager.GetObject("consejopic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Copia_de_HackyFox__2_ {
             get {
                 object obj = ResourceManager.GetObject("Copia de HackyFox (2)", resourceCulture);
@@ -106,6 +116,16 @@ namespace HackyFox.Properties {
         internal static System.Drawing.Bitmap menuicon {
             get {
                 object obj = ResourceManager.GetObject("menuicon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Pantallas_HackyFox {
+            get {
+                object obj = ResourceManager.GetObject("Pantallas HackyFox", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
