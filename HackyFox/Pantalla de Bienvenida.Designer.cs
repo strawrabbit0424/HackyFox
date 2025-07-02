@@ -2,7 +2,7 @@
 
 namespace HackyFox
 {
-    partial class Form1
+    partial class PantallaBienvenida
     {
         /// <summary>
         ///  Required designer variable.
@@ -30,10 +30,9 @@ namespace HackyFox
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-<<<<<<< HEAD
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PantallaBienvenida));
             pictureBox1Menu = new PictureBox();
-            welcomeLabel = new Label();
+            lbBienvenida = new Label();
             label2 = new Label();
             label3 = new Label();
             label1 = new Label();
@@ -44,25 +43,18 @@ namespace HackyFox
             iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             label6 = new Label();
-            pictureBox2 = new PictureBox();
-            pictureBox1 = new PictureBox();
+            pbBienvenida = new PictureBox();
+            pbLogoBienvenida = new PictureBox();
             btn_personalizado1 = new Btn_personalizado();
-            btn_personalizado2 = new Btn_personalizado();
-            btn_personalizado3 = new Btn_personalizado();
+            btnIniciarSesion = new Btn_personalizado();
+            btnRegistrarse = new Btn_personalizado();
             ((System.ComponentModel.ISupportInitialize)pictureBox1Menu).BeginInit();
             panelmenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
-=======
-            pictureBox2 = new PictureBox();
-            pictureBox1 = new PictureBox();
-            button1 = new Button();
-            label1 = new Label();
-            button2 = new Button();
->>>>>>> 953d28082e617c84c972a12410ad8c04d8a7e3e7
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbBienvenida).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbLogoBienvenida).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1Menu
@@ -75,20 +67,19 @@ namespace HackyFox
             pictureBox1Menu.TabIndex = 5;
             pictureBox1Menu.TabStop = false;
             // 
-            // welcomeLabel
+            // lbBienvenida
             // 
-            welcomeLabel.AutoSize = true;
-            welcomeLabel.BackColor = Color.White;
-            welcomeLabel.Font = new Font("Clear Sans", 25F, FontStyle.Bold);
-            welcomeLabel.Location = new Point(421, 315);
-            welcomeLabel.Name = "welcomeLabel";
-            welcomeLabel.Size = new Size(264, 58);
-            welcomeLabel.TabIndex = 4;
-            welcomeLabel.Text = "¡Bienvenido!";
+            lbBienvenida.AutoSize = true;
+            lbBienvenida.BackColor = Color.White;
+            lbBienvenida.Font = new Font("Clear Sans", 25F, FontStyle.Bold);
+            lbBienvenida.Location = new Point(421, 315);
+            lbBienvenida.Name = "lbBienvenida";
+            lbBienvenida.Size = new Size(264, 58);
+            lbBienvenida.TabIndex = 4;
+            lbBienvenida.Text = "¡Bienvenido!";
             // 
             // label2
             // 
-<<<<<<< HEAD
             label2.AutoSize = true;
             label2.Font = new Font("Microsoft Sans Serif", 25F);
             label2.Location = new Point(267, 19);
@@ -96,43 +87,13 @@ namespace HackyFox
             label2.Size = new Size(163, 39);
             label2.TabIndex = 2;
             label2.Text = "Leccion 1";
-=======
-            pictureBox2.BackColor = SystemColors.Window;
-            pictureBox2.Location = new Point(90, 80);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(917, 559);
-            pictureBox2.TabIndex = 1;
-            pictureBox2.TabStop = false;
->>>>>>> 953d28082e617c84c972a12410ad8c04d8a7e3e7
             // 
             // label3
             // 
-<<<<<<< HEAD
             label3.Location = new Point(0, 0);
             label3.Name = "label3";
             label3.Size = new Size(100, 23);
             label3.TabIndex = 0;
-=======
-            pictureBox1.BackColor = Color.White;
-            pictureBox1.Image = Properties.Resources.Copia_de_HackyFox__2_;
-            pictureBox1.Location = new Point(205, 120);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(693, 147);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 2;
-            pictureBox1.TabStop = false;
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.FromArgb(174, 225, 235);
-            button1.Font = new Font("Comfortaa", 16F);
-            button1.Location = new Point(443, 376);
-            button1.Name = "button1";
-            button1.Size = new Size(205, 68);
-            button1.TabIndex = 3;
-            button1.Text = "Inciar sesión";
-            button1.UseVisualStyleBackColor = false;
->>>>>>> 953d28082e617c84c972a12410ad8c04d8a7e3e7
             // 
             // label1
             // 
@@ -143,7 +104,6 @@ namespace HackyFox
             // 
             // panelmenu
             // 
-<<<<<<< HEAD
             panelmenu.BackColor = Color.FromArgb(155, 209, 219);
             panelmenu.Controls.Add(pictureBox1Menu);
             panelmenu.Controls.Add(label5);
@@ -233,26 +193,27 @@ namespace HackyFox
             label6.TabIndex = 8;
             label6.Text = "Mascota";
             // 
-            // pictureBox2
+            // pbBienvenida
             // 
-            pictureBox2.BackColor = SystemColors.Window;
-            pictureBox2.Location = new Point(90, 80);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(917, 559);
-            pictureBox2.TabIndex = 1;
-            pictureBox2.TabStop = false;
+            pbBienvenida.BackColor = SystemColors.Window;
+            pbBienvenida.Location = new Point(90, 80);
+            pbBienvenida.Name = "pbBienvenida";
+            pbBienvenida.Size = new Size(917, 559);
+            pbBienvenida.TabIndex = 1;
+            pbBienvenida.TabStop = false;
+            pbBienvenida.Click += pbBienvenida_Click;
             // 
-            // pictureBox1
+            // pbLogoBienvenida
             // 
-            pictureBox1.BackColor = Color.White;
-            pictureBox1.Image = Resources.textox;
-            pictureBox1.Location = new Point(276, 148);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(560, 147);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 6;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click_1;
+            pbLogoBienvenida.BackColor = Color.White;
+            pbLogoBienvenida.Image = HackyFox.Properties.Resources.textox;
+            pbLogoBienvenida.Location = new Point(276, 148);
+            pbLogoBienvenida.Name = "pbLogoBienvenida";
+            pbLogoBienvenida.Size = new Size(560, 147);
+            pbLogoBienvenida.SizeMode = PictureBoxSizeMode.StretchImage;
+            pbLogoBienvenida.TabIndex = 6;
+            pbLogoBienvenida.TabStop = false;
+            pbLogoBienvenida.Click += pictureBox1_Click_1;
             // 
             // btn_personalizado1
             // 
@@ -265,82 +226,68 @@ namespace HackyFox
             btn_personalizado1.TabIndex = 0;
             btn_personalizado1.UseVisualStyleBackColor = false;
             // 
-            // btn_personalizado2
+            // btnIniciarSesion
             // 
-            btn_personalizado2.BackColor = Color.FromArgb(174, 225, 235);
-            btn_personalizado2.FlatAppearance.BorderSize = 0;
-            btn_personalizado2.FlatStyle = FlatStyle.Flat;
-            btn_personalizado2.Font = new Font("Comfortaa", 10F, FontStyle.Bold);
-            btn_personalizado2.ForeColor = Color.Black;
-            btn_personalizado2.Location = new Point(431, 394);
-            btn_personalizado2.Name = "btn_personalizado2";
-            btn_personalizado2.Size = new Size(239, 69);
-            btn_personalizado2.TabIndex = 7;
-            btn_personalizado2.Text = "Iniciar sesión";
-            btn_personalizado2.UseVisualStyleBackColor = false;
-            btn_personalizado2.Click += btn_personalizado2_Click;
+            btnIniciarSesion.BackColor = Color.FromArgb(174, 225, 235);
+            btnIniciarSesion.FlatAppearance.BorderSize = 0;
+            btnIniciarSesion.FlatStyle = FlatStyle.Flat;
+            btnIniciarSesion.Font = new Font("Comfortaa", 10F, FontStyle.Bold);
+            btnIniciarSesion.ForeColor = Color.Black;
+            btnIniciarSesion.Location = new Point(431, 394);
+            btnIniciarSesion.Name = "btnIniciarSesion";
+            btnIniciarSesion.Size = new Size(239, 69);
+            btnIniciarSesion.TabIndex = 7;
+            btnIniciarSesion.Text = "Iniciar sesión";
+            btnIniciarSesion.UseVisualStyleBackColor = false;
+            btnIniciarSesion.Click += btn_personalizado2_Click;
             // 
-            // btn_personalizado3
+            // btnRegistrarse
             // 
-            btn_personalizado3.BackColor = Color.FromArgb(174, 225, 235);
-            btn_personalizado3.FlatAppearance.BorderSize = 0;
-            btn_personalizado3.FlatStyle = FlatStyle.Flat;
-            btn_personalizado3.Font = new Font("Comfortaa", 10F, FontStyle.Bold);
-            btn_personalizado3.ForeColor = Color.Black;
-            btn_personalizado3.Location = new Point(431, 493);
-            btn_personalizado3.Name = "btn_personalizado3";
-            btn_personalizado3.Size = new Size(239, 69);
-            btn_personalizado3.TabIndex = 8;
-            btn_personalizado3.Text = "Registrarse";
-            btn_personalizado3.UseVisualStyleBackColor = false;
-=======
-            button2.BackColor = Color.FromArgb(174, 225, 235);
-            button2.Font = new Font("Comfortaa", 18F);
-            button2.Location = new Point(443, 463);
-            button2.Name = "button2";
-            button2.Size = new Size(205, 62);
-            button2.TabIndex = 5;
-            button2.Text = "Registrarse";
-            button2.UseVisualStyleBackColor = false;
->>>>>>> 953d28082e617c84c972a12410ad8c04d8a7e3e7
+            btnRegistrarse.BackColor = Color.FromArgb(174, 225, 235);
+            btnRegistrarse.FlatAppearance.BorderSize = 0;
+            btnRegistrarse.FlatStyle = FlatStyle.Flat;
+            btnRegistrarse.Font = new Font("Comfortaa", 10F, FontStyle.Bold);
+            btnRegistrarse.ForeColor = Color.Black;
+            btnRegistrarse.Location = new Point(431, 493);
+            btnRegistrarse.Name = "btnRegistrarse";
+            btnRegistrarse.Size = new Size(239, 69);
+            btnRegistrarse.TabIndex = 8;
+            btnRegistrarse.Text = "Registrarse";
+            btnRegistrarse.UseVisualStyleBackColor = false;
             // 
-            // Form1
+            // PantallaBienvenida
             // 
             AutoScaleDimensions = new SizeF(9F, 18F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 241, 62);
             ClientSize = new Size(1108, 726);
-            Controls.Add(btn_personalizado3);
-            Controls.Add(btn_personalizado2);
-            Controls.Add(pictureBox1);
-            Controls.Add(welcomeLabel);
-            Controls.Add(pictureBox2);
+            Controls.Add(btnRegistrarse);
+            Controls.Add(btnIniciarSesion);
+            Controls.Add(pbLogoBienvenida);
+            Controls.Add(lbBienvenida);
+            Controls.Add(pbBienvenida);
             Font = new Font("Microsoft Sans Serif", 9F);
             Icon = (Icon)resources.GetObject("$this.Icon");
             MinimumSize = new Size(950, 600);
-            Name = "Form1";
-            Text = "HackyFox- Lecciones";
+            Name = "PantallaBienvenida";
+            Text = "HackyFox- Bienvenida";
             Load += Form1_Load_1;
-<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)pictureBox1Menu).EndInit();
             panelmenu.ResumeLayout(false);
             panelmenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).EndInit();
-=======
->>>>>>> 953d28082e617c84c972a12410ad8c04d8a7e3e7
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbBienvenida).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbLogoBienvenida).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
         private PictureBox pictureBox1Menu;
-        private Label welcomeLabel; // Renamed from 'label1'
+        private Label lbBienvenida; // Renamed from 'label1'
 
-<<<<<<< HEAD
         private Label label2;
         private Label label3;
         private Label label1;
@@ -351,18 +298,11 @@ namespace HackyFox
         private Label label5;
         private Label label4;
         private Label label6;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox1;
+        private PictureBox pbBienvenida;
+        private PictureBox pbLogoBienvenida;
         private Btn_personalizado btn_personalizado1;
-        private Btn_personalizado btn_personalizado2;
-        private Btn_personalizado btn_personalizado3;
-=======
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox1;
-        private Button button1;
-        private Label label1;
-        private Button button2;
->>>>>>> 953d28082e617c84c972a12410ad8c04d8a7e3e7
+        private Btn_personalizado btnIniciarSesion;
+        private Btn_personalizado btnRegistrarse;
     }
 }
 

@@ -1,8 +1,8 @@
 namespace HackyFox
 {
-    public partial class Form1 : Form
+    public partial class PantallaBienvenida : Form
     {
-        public Form1()
+        public PantallaBienvenida()
         {
             InitializeComponent();
         }
@@ -58,6 +58,11 @@ namespace HackyFox
         }
 
         private void btn_personalizado2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbBienvenida_Click(object sender, EventArgs e)
         {
 
         }
