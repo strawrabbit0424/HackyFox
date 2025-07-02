@@ -11,7 +11,7 @@ namespace HackyFox
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Menu()); //Cambiar al forms que quieras revisar
+            Application.Run(new PantallaRegistro()); //Cambiar al forms que quieras revisar
         }
     }
 }

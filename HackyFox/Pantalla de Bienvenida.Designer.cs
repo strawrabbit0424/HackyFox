@@ -43,18 +43,18 @@ namespace HackyFox
             iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             label6 = new Label();
-            pbBienvenida = new PictureBox();
             pbLogoBienvenida = new PictureBox();
             btn_personalizado1 = new Btn_personalizado();
             btnIniciarSesion = new Btn_personalizado();
             btnRegistrarse = new Btn_personalizado();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1Menu).BeginInit();
             panelmenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pbBienvenida).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbLogoBienvenida).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1Menu
@@ -70,7 +70,7 @@ namespace HackyFox
             // lbBienvenida
             // 
             lbBienvenida.AutoSize = true;
-            lbBienvenida.BackColor = Color.White;
+            lbBienvenida.BackColor = Color.FromArgb(242, 242, 242);
             lbBienvenida.Font = new Font("Clear Sans", 25F, FontStyle.Bold);
             lbBienvenida.Location = new Point(421, 315);
             lbBienvenida.Name = "lbBienvenida";
@@ -193,21 +193,11 @@ namespace HackyFox
             label6.TabIndex = 8;
             label6.Text = "Mascota";
             // 
-            // pbBienvenida
-            // 
-            pbBienvenida.BackColor = SystemColors.Window;
-            pbBienvenida.Location = new Point(90, 80);
-            pbBienvenida.Name = "pbBienvenida";
-            pbBienvenida.Size = new Size(917, 559);
-            pbBienvenida.TabIndex = 1;
-            pbBienvenida.TabStop = false;
-            pbBienvenida.Click += pbBienvenida_Click;
-            // 
             // pbLogoBienvenida
             // 
-            pbLogoBienvenida.BackColor = Color.White;
-            pbLogoBienvenida.Image = HackyFox.Properties.Resources.textox;
-            pbLogoBienvenida.Location = new Point(276, 148);
+            pbLogoBienvenida.BackColor = Color.FromArgb(242, 242, 242);
+            pbLogoBienvenida.Image = Properties.Resources.textox;
+            pbLogoBienvenida.Location = new Point(272, 136);
             pbLogoBienvenida.Name = "pbLogoBienvenida";
             pbLogoBienvenida.Size = new Size(560, 147);
             pbLogoBienvenida.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -233,7 +223,7 @@ namespace HackyFox
             btnIniciarSesion.FlatStyle = FlatStyle.Flat;
             btnIniciarSesion.Font = new Font("Comfortaa", 10F, FontStyle.Bold);
             btnIniciarSesion.ForeColor = Color.Black;
-            btnIniciarSesion.Location = new Point(431, 394);
+            btnIniciarSesion.Location = new Point(431, 407);
             btnIniciarSesion.Name = "btnIniciarSesion";
             btnIniciarSesion.Size = new Size(239, 69);
             btnIniciarSesion.TabIndex = 7;
@@ -248,12 +238,22 @@ namespace HackyFox
             btnRegistrarse.FlatStyle = FlatStyle.Flat;
             btnRegistrarse.Font = new Font("Comfortaa", 10F, FontStyle.Bold);
             btnRegistrarse.ForeColor = Color.Black;
-            btnRegistrarse.Location = new Point(431, 493);
+            btnRegistrarse.Location = new Point(431, 527);
             btnRegistrarse.Name = "btnRegistrarse";
             btnRegistrarse.Size = new Size(239, 69);
             btnRegistrarse.TabIndex = 8;
             btnRegistrarse.Text = "Registrarse";
             btnRegistrarse.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(96, 84);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(914, 582);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 9;
+            pictureBox1.TabStop = false;
             // 
             // PantallaBienvenida
             // 
@@ -265,7 +265,7 @@ namespace HackyFox
             Controls.Add(btnIniciarSesion);
             Controls.Add(pbLogoBienvenida);
             Controls.Add(lbBienvenida);
-            Controls.Add(pbBienvenida);
+            Controls.Add(pictureBox1);
             Font = new Font("Microsoft Sans Serif", 9F);
             Icon = (Icon)resources.GetObject("$this.Icon");
             MinimumSize = new Size(950, 600);
@@ -278,8 +278,8 @@ namespace HackyFox
             ((System.ComponentModel.ISupportInitialize)iconPictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pbBienvenida).EndInit();
             ((System.ComponentModel.ISupportInitialize)pbLogoBienvenida).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -298,11 +298,11 @@ namespace HackyFox
         private Label label5;
         private Label label4;
         private Label label6;
-        private PictureBox pbBienvenida;
         private PictureBox pbLogoBienvenida;
         private Btn_personalizado btn_personalizado1;
         private Btn_personalizado btnIniciarSesion;
         private Btn_personalizado btnRegistrarse;
+        private PictureBox pictureBox1;
     }
 }
 
